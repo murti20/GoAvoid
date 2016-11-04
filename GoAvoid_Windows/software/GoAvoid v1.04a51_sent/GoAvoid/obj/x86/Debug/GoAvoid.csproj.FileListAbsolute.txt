@@ -1,4 +1,0 @@
-C:\Users\Pau\Desktop\OutsideObsFixedSendThese\GoAvoid_Windows\software\GoAvoid v1.04a51_sent\GoAvoid\bin\x86\Debug\GoAvoid.exe.config
-C:\Users\Pau\Desktop\OutsideObsFixedSendThese\GoAvoid_Windows\software\GoAvoid v1.04a51_sent\GoAvoid\obj\x86\Debug\Interop.AcroPDFLib.dll
-C:\Users\Pau\Desktop\OutsideObsFixedSendThese\GoAvoid_Windows\software\GoAvoid v1.04a51_sent\GoAvoid\obj\x86\Debug\AxInterop.AcroPDFLib.dll
-C:\Users\Pau\Desktop\OutsideObsFixedSendThese\GoAvoid_Windows\software\GoAvoid v1.04a51_sent\GoAvoid\obj\x86\Debug\GoAvoid.csproj.ResolveComReference.cache
