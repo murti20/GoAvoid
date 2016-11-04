@@ -10,6 +10,7 @@ from https://github.com/ominnetoglu/GoAvoid/.
 This documentation describes the setup and usage of GoAvoid. All functions and related menu structures are explained in detail.
 
 
+
 Copyright © 2016 Okan Minnetoglu and Erdinc Sahin Conkur
 
 License: GNU GENERAL PUBLIC LICENSE Version 3
