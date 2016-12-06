@@ -1,7 +1,7 @@
 
 Installing the software
 
--Install Pre-Requirements from the GoAvoid Software/Pre-Requirements (if needed)
+-Install Pre-Requirements from the https://github.com/ominnetoglu/GoAvoid/releases/tag/v1.0 (if needed)
 
 -Install the software from the GoAvoid Software/Debug/setup.exe or GoAvoid Software/Release/setup.exe
 
