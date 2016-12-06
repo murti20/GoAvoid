@@ -8,7 +8,7 @@ Microsoft .NET Framework 4.0
 Microsoft Windows Installer 4.5 or higher (https://github.com/ominnetoglu/GoAvoid/releases/download/v1.0/Pre-Requirements.if.needed.rar)
 Adobe Acrobat Reader( https://get.adobe.com/tr/reader/)
 
--Install the software from the GoAvoid Software/Debug/setup.exe or GoAvoid Software/Release/setup.exe
+-Install the software from the GoAvoid Software/Debug/setup.exe or GoAvoid Software/Release/setup.exe.
 
 Modifying the software codes
 
