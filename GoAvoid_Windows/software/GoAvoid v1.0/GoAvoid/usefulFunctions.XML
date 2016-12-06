@@ -1,0 +1,743 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>usefulFunctions</name>
+    </assembly>
+    <members>
+        <member name="M:usefulFunctions.f.m(System.String)">
+            <summary>
+            MessageBox.Show(s), Displays a message box with specified text.
+            </summary>
+            <param name="s">The text to display in the message box.</param>
+        </member>
+        <member name="M:usefulFunctions.f.m">
+            <summary>
+            MessageBox.Show(s), Displays a message box with a string "1".
+            </summary>
+        </member>
+        <member name="M:usefulFunctions.f.s(System.Int32)">
+            <summary>
+            Thread.Sleep(n), Blocks the current thread for the specified number of milliseconds.
+            </summary>
+            <param name="n">The number of milliseconds for which the thread is blocked. Specify zero (0) to indicate that this thread should be suspended to allow other waiting threads to execute. Specify Infinite to block the thread indefinitely.</param>
+        </member>
+        <member name="M:usefulFunctions.f.d">
+            <summary>
+            Application.DoEvents(), Processes all Windows messages currently in the message queue.
+            </summary>
+        </member>
+        <member name="M:usefulFunctions.f.L(System.Double,System.Double,System.Double)">
+            <summary>
+            Evaluates Math.Sqrt(x * x + y * y + z * z), gets Length
+            </summary>
+            <param name="x">A double-precision floating point number.</param>
+            <param name="y">A double-precision floating point number.</param>
+            <param name="z">A double-precision floating point number.</param>
+            <returns>Math.Sqrt(x * x + y * y + z * z)</returns>
+        </member>
+        <member name="M:usefulFunctions.f.L(System.Double,System.Double)">
+            <summary>
+            Evaluates Math.Sqrt(x * x + y * y), gets Length
+            </summary>
+            <param name="x">A double-precision floating point number.</param>
+            <param name="y">A double-precision floating point number.</param>
+            <returns>Math.Sqrt(x * x + y * y)</returns>
+        </member>
+        <member name="M:usefulFunctions.f.scaleT(System.Windows.Forms.PaintEventArgs,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Applies the specified scaling operation to the transformation matrix of this Graphics by prepending it to the object's transformation matrix and changes the origin of the coordinate system by prepending the specified translation to the transformation matrix of this Graphics.
+            </summary>
+            <param name="e">PaintEventArgs e</param>
+            <param name="mWheel">A signed count of the number of detents the mouse wheel has rotated.</param>
+            <param name="sf"></param>
+            <param name="offsetX">The x-coordinate of the translation.</param>
+            <param name="offsetY">The y-coordinate of the translation.</param>
+        </member>
+        <member name="M:usefulFunctions.f.scaleT1(System.Windows.Forms.PaintEventArgs,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Applies the specified scaling operation to the transformation matrix of this Graphics by prepending it to the object's transformation matrix and changes the origin of the coordinate system by prepending the specified translation to the transformation matrix of this Graphics.
+            </summary>
+            <param name="e">PaintEventArgs e</param>
+            <param name="mWheel">A signed count of the number of detents the mouse wheel has rotated.</param>
+            <param name="sf"></param>
+            <param name="offsetX">The x-coordinate of the translation.</param>
+            <param name="offsetY">The y-coordinate of the translation.</param>
+            <param name="offsetVx">The appendant parameter to the x-coordinate of the translation.</param>
+            <param name="offsetVy">The appendant parameter to the y-coordinate of the translation.</param>
+        </member>
+        <member name="M:usefulFunctions.f.intersectionOfTwoLines(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double@,System.Double@)">
+            <summary>
+            intersectionOfTwoLines
+            </summary>
+            <param name="xa">The x-coordinate of the first line.</param>
+            <param name="xaL">The x-length of the first line.</param>
+            <param name="ya">The y-coordinate of the first line.</param>
+            <param name="yaL">The y-length of the first line.</param>
+            <param name="xb">The x-coordinate of the second line.</param>
+            <param name="xbL">The x-length of the second line.</param>
+            <param name="yb">The y-coordinate of the second line.</param>
+            <param name="ybL">The y-length of the second line.</param>
+            <param name="t1">The parameter of the first line.</param>
+            <param name="t2">The parameter of the second line.</param>
+        </member>
+        <member name="M:usefulFunctions.f.vm(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            cross product
+            </summary>
+            <param name="vx1">The x-length of the first line.</param>
+            <param name="vy1">The y-length of the first line.</param>
+            <param name="vx2">The x-length of the second line.</param>
+            <param name="vy2">The y-length of the second line.</param>
+        </member>
+        <member name="M:usefulFunctions.f.p(System.Drawing.Color,System.Int32)">
+            <summary>
+            Pen p = new Pen(c, width), Initializes a new instance of the Pen class with the specified Color and Width properties.
+            </summary>
+            <param name="c">A Color structure that indicates the color of this Pen.</param>
+            <param name="width">A value indicating the width of this Pen.</param>
+            <returns>new Pen(c, width)</returns>
+        </member>
+        <member name="M:usefulFunctions.f.p(System.Drawing.Color,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the Pen class with the specified Color, Width and Cap properties.
+            </summary>
+            <param name="c">A Color structure that indicates the color of this Pen.</param>
+            <param name="width">A value indicating the width of this Pen.</param>
+            <param name="cap">p.StartCap = LineCap.ArrowAnchor(cap = 0), p.EndCap = LineCap.ArrowAnchor(cap = 1), p.StartCap = LineCap.ArrowAnchor and p.EndCap = LineCap.ArrowAnchor(cap = 2).</param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.pR(System.Int32)">
+            <summary>
+            Pen pR = new Pen(Color.Red, width), Initializes a new instance of the Pen class with Red Color and the specified Width properties.
+            </summary>
+            <param name="width">A value indicating the width of this Pen.</param>
+            <returns>new Pen(Color.Red, width)</returns>       
+        </member>
+        <member name="M:usefulFunctions.f.pG(System.Int32)">
+            <summary>
+            Pen pG = new Pen(Color.Green, width), Initializes a new instance of the Pen class with Green Color and the specified Width properties.
+            </summary>
+            <param name="width">A value indicating the width of this Pen.</param>
+            <returns>Pen(Color.Green, width)</returns>
+        </member>
+        <member name="M:usefulFunctions.f.pG">
+            <summary>
+            Pen pG = new Pen(Color.Green, 1), Initializes a new instance of the Pen class with Green Color and 1 Width properties.
+            </summary>
+            <returns>new Pen(Color.Green, 1)</returns>
+        </member>
+        <member name="M:usefulFunctions.f.pB(System.Int32)">
+            <summary>
+            Pen pB = new Pen(Color.Blue, width), Initializes a new instance of the Pen class with Blue Color and the specified Width properties.
+            </summary>
+            <param name="width">A value indicating the width of this Pen.</param>
+            <returns>new Pen(Color.Blue, width)</returns>
+        </member>
+        <member name="M:usefulFunctions.f.pB">
+            <summary>
+            Pen pB = new Pen(Color.Blue, 1), Initializes a new instance of the Pen class with Blue Color and 1 Width properties.
+            </summary>
+            <returns>new Pen(Color.Blue, 1)</returns>
+        </member>
+        <member name="M:usefulFunctions.f.pBr(System.Int32)">
+            <summary>
+            Pen pBr = new Pen(Color.Brown, width), Initializes a new instance of the Pen class with Brown Color and the specified Width properties.
+            </summary>
+            <param name="width">A value indicating the width of this Pen.</param>
+            <returns>new Pen(Color.Brown, width)</returns>
+        </member>
+        <member name="M:usefulFunctions.f.pBr">
+            <summary>
+            Pen pBr = new Pen(Color.Brown, 1), Initializes a new instance of the Pen class with Brown Color and 1 Width properties.
+            </summary>
+            <returns>new Pen(Color.Brown, 1)</returns>
+        </member>
+        <member name="M:usefulFunctions.f.pC(System.Int32)">
+            <summary>
+            Pen pC = new Pen(Color.Cyan, width), Initializes a new instance of the Pen class with Cyan Color and the specified Width properties.
+            </summary>
+            <param name="width">A value indicating the width of this Pen.</param>
+            <returns>new Pen(Color.Cyan, width)</returns>
+        </member>
+        <member name="M:usefulFunctions.f.pC">
+            <summary>
+            Pen pC = new Pen(Color.Cyan, 1), Initializes a new instance of the Pen class with Cyan Color and 1 Width properties.
+            </summary>
+            <returns>new Pen(Color.Cyan, 1)</returns>
+        </member>
+        <member name="M:usefulFunctions.f.pY(System.Int32)">
+            <summary>
+            Pen pY = new Pen(Color.Yellow, width), Initializes a new instance of the Pen class with Yellow Color and the specified Width properties.
+            </summary>
+            <param name="width">A value indicating the width of this Pen.</param>
+            <returns>new Pen(Color.Yellow, width)</returns>
+        </member>
+        <member name="M:usefulFunctions.f.pY">
+            <summary>
+            Pen pY = new Pen(Color.Yellow, 1), Initializes a new instance of the Pen class with Yellow Color and 1 Width properties.
+            </summary>
+            <returns>new Pen(Color.Yellow, 1)</returns>
+        </member>
+        <member name="M:usefulFunctions.f.pLY(System.Int32)">
+            <summary>
+            Pen pLY = new Pen(Color.LightYellow, width), Initializes a new instance of the Pen class with LightYellow Color and the specified Width properties.
+            </summary>
+            <param name="width">A value indicating the width of this Pen.</param>
+            <returns>new Pen(Color.LightYellow, width)</returns>
+        </member>
+        <member name="M:usefulFunctions.f.pLY">
+            <summary>
+            Pen pLY = new Pen(Color.LightYellow, 1), Initializes a new instance of the Pen class with LightYellow Color and 1 Width properties.
+            </summary>
+            <returns>new Pen(Color.LightYellow, 1)</returns>
+        </member>
+        <member name="M:usefulFunctions.f.pBl(System.Int32)">
+            <summary>
+            Pen pBl = new Pen(Color.Black, width), Initializes a new instance of the Pen class with Black Color and the specified Width properties.
+            </summary>
+            <param name="width">A value indicating the width of this Pen.</param>
+            <returns>new Pen(Color.Black, width)</returns>
+        </member>
+        <member name="M:usefulFunctions.f.pBl">
+            <summary>
+            Pen pBl = new Pen(Color.Black, 1), Initializes a new instance of the Pen class with Black Color and 1 Width properties.
+            </summary>
+            <returns>new Pen(Color.Black, 1)</returns>
+        </member>
+        <member name="M:usefulFunctions.f.pM(System.Int32)">
+            <summary>
+            Pen pM = new Pen(Color.Magenta, width), Initializes a new instance of the Pen class with Magenta Color and the specified Width properties.
+            </summary>
+            <param name="width">A value indicating the width of this Pen.</param>
+            <returns>new Pen(Color.Magenta, width)</returns>
+        </member>
+        <member name="M:usefulFunctions.f.pM">
+            <summary>
+            Pen pM = new Pen(Color.Magenta, 1), Initializes a new instance of the Pen class with Magenta Color and 1 Width properties.
+            </summary>
+            <returns>new Pen(Color.Magenta, 1)</returns>
+        </member>
+        <member name="M:usefulFunctions.f.pGr(System.Int32)">
+            <summary>
+            Pen pGr = new Pen(Color.Gray, width), Initializes a new instance of the Pen class with Gray Color and the specified Width properties.
+            </summary>
+            <param name="width">A value indicating the width of this Pen.</param>
+            <returns>new Pen(Color.Gray, width)</returns>
+        </member>
+        <member name="M:usefulFunctions.f.pGr">
+            <summary>
+            Pen pGr = new Pen(Color.Gray, 1), Initializes a new instance of the Pen class with Gray Color and 1 Width properties.
+            </summary>
+            <returns>new Pen(Color.Gray, 1)</returns>
+        </member>
+        <member name="M:usefulFunctions.f.pLG(System.Int32)">
+            <summary>
+            Pen pLG = new Pen(Color.LightGreen, width), Initializes a new instance of the Pen class with LightGreen Color and the specified Width properties.
+            </summary>
+            <param name="width">A value indicating the width of this Pen.</param>
+            <returns>new Pen(Color.LightGreen, width)</returns>
+        </member>
+        <member name="M:usefulFunctions.f.pLG">
+            <summary>
+            Pen pLG = new Pen(Color.LightGreen, 1), Initializes a new instance of the Pen class with LightGreen Color and 1 Width properties.
+            </summary>
+            <returns>new Pen(Color.LightGreen, 1)</returns>
+        </member>
+        <member name="M:usefulFunctions.f.pLGr(System.Int32)">
+            <summary>
+            Pen pLGr = new Pen(Color.LightGray, width), Initializes a new instance of the Pen class with LightGray Color and the specified Width properties.
+            </summary>
+            <param name="width">A value indicating the width of this Pen.</param>
+            <returns>new Pen(Color.LightGray, width)</returns>
+        </member>
+        <member name="M:usefulFunctions.f.pLGr">
+            <summary>
+            Pen pLGr = new Pen(Color.LightGray, 1), Initializes a new instance of the Pen class with LightGray Color and 1 Width properties.
+            </summary>
+            <returns>new Pen(Color.LightGray, 1)</returns>
+        </member>
+        <member name="M:usefulFunctions.f.arrowedPen(System.Drawing.Color,System.Single,System.Single,System.Single)">
+            <summary>
+            arrowedPen
+            </summary>
+            <param name="c">A Color structure that indicates the color of this Pen.</param>
+            <param name="pw">A value indicating the width of this Pen.</param>
+            <param name="w">A value indicating the width of arrow.</param>
+            <param name="h">A value indicating the height of arrow.</param>
+            <returns>new Pen</returns>
+        </member>
+        <member name="M:usefulFunctions.f.arrowedPenWStartCup(System.Drawing.Color,System.Single,System.Single,System.Single)">
+            <summary>
+            arrowedPenWithStartCup
+            </summary>
+            <param name="c">A Color structure that indicates the color of this Pen.</param>
+            <param name="pw">A value indicating the width of this Pen.</param>
+            <param name="w">A value indicating the width of arrow.</param>
+            <param name="h">A value indicating the height of arrow.</param>
+            <returns>new Pen</returns>
+        </member>
+        <member name="M:usefulFunctions.f.dL(System.Windows.Forms.PaintEventArgs,System.Drawing.Pen,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Draws a line connecting the two points specified by the coordinate pairs.
+            </summary>
+            <param name="e">PaintEventArgs e</param>
+            <param name="p">Pen that determines the color, width, and style of the line.</param>
+            <param name="x1">The x-coordinate of the first point.</param>
+            <param name="y1">The y-coordinate of the first point.</param>
+            <param name="x2">The x-coordinate of the second point.</param>
+            <param name="y2">The y-coordinate of the second point.</param>
+        </member>
+        <member name="M:usefulFunctions.f.dL(System.Windows.Forms.PaintEventArgs,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Draws a line connecting the two points specified by the coordinate pairs with 1 Width property.
+            </summary>
+            <param name="e">PaintEventArgs e</param>
+            <param name="x1">The x-coordinate of the first point</param>
+            <param name="y1">The y-coordinate of the first point.</param>
+            <param name="x2">The x-coordinate of the second point.</param>
+            <param name="y2">The y-coordinate of the second point.</param>
+        </member>
+        <member name="M:usefulFunctions.f.dL(System.Windows.Forms.PaintEventArgs,System.Drawing.Pen,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Draws a line connecting the two points specified by the coordinate pairs.
+            </summary>
+            <param name="e">PaintEventArgs e</param>
+            <param name="p">Pen that determines the color, width, and style of the line.</param>
+            <param name="x1">The x-coordinate of the first point</param>
+            <param name="y1">The y-coordinate of the first point.</param>
+            <param name="x2">The x-coordinate of the second point.</param>
+            <param name="y2">The y-coordinate of the second point.</param>
+        </member>
+        <member name="M:usefulFunctions.f.dL(System.Drawing.Graphics,System.Drawing.Pen,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Draws a line connecting the two points specified by the coordinate pairs.
+            </summary>
+            <param name="g">Graphics g</param>
+            <param name="p">Pen that determines the color, width, and style of the line.</param>
+            <param name="x1">The x-coordinate of the first point.</param>
+            <param name="y1">The y-coordinate of the first point.</param>
+            <param name="x2">The x-coordinate of the second point.</param>
+            <param name="y2">The y-coordinate of the second point.</param>
+        </member>
+        <member name="M:usefulFunctions.f.dL(System.Drawing.Graphics,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Draws a line connecting the two points specified by the coordinate pairs with 1 Width property.
+            </summary>
+            <param name="g">Graphics g</param>
+            <param name="x1">The x-coordinate of the first point.</param>
+            <param name="y1">The y-coordinate of the first point.</param>
+            <param name="x2">The x-coordinate of the second point.</param>
+            <param name="y2">The y-coordinate of the second point.</param>
+        </member>
+        <member name="M:usefulFunctions.f.dL(System.Drawing.Graphics,System.Drawing.Pen,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Draws a line connecting the two points specified by the coordinate pairs.
+            </summary>
+            <param name="g">Graphics g</param>
+            <param name="p">Pen that determines the color, width, and style of the line.</param>
+            <param name="x1">The x-coordinate of the first point.</param>
+            <param name="y1">The y-coordinate of the first point.</param>
+            <param name="x2">The x-coordinate of the second point.</param>
+            <param name="y2">The y-coordinate of the second point.</param>
+        </member>
+        <member name="M:usefulFunctions.f.dC(System.Windows.Forms.PaintEventArgs,System.Drawing.Pen,System.Double,System.Double,System.Double)">
+            <summary>
+            Draws a circle specified by a coordinate pair of the center and radius.
+            </summary>
+            <param name="e">PaintEventArgs e</param>
+            <param name="p">Pen that determines the color, width, and style of the line.</param>
+            <param name="x">The x-coordinate of center of the circle.</param>
+            <param name="y">The y-coordinate of center of the circle.</param>
+            <param name="r">The radius of the circle.</param>
+        </member>
+        <member name="M:usefulFunctions.f.dC(System.Windows.Forms.PaintEventArgs,System.Drawing.Pen,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Draws a circle specified by a coordinate pair of the center and radius.
+            </summary>
+            <param name="e">PaintEventArgs e</param>
+            <param name="p">Pen that determines the color, width, and style of the line.</param>
+            <param name="x">The x-coordinate of center of the circle.</param>
+            <param name="y">The y-coordinate of center of the circle.</param>
+            <param name="r">The radius of the circle.</param>
+        </member>
+        <member name="M:usefulFunctions.f.dC(System.Drawing.Graphics,System.Drawing.Pen,System.Double,System.Double,System.Double)">
+            <summary>
+            Draws a circle specified by a coordinate pair of the center and radius.
+            </summary>
+            <param name="g">Graphics g</param>
+            <param name="p">Pen that determines the color, width, and style of the line.</param>
+            <param name="x">The x-coordinate of center of the circle.</param>
+            <param name="y">The y-coordinate of center of the circle.</param>
+            <param name="r">The radius of the circle.</param>
+        </member>
+        <member name="M:usefulFunctions.f.dC(System.Drawing.Graphics,System.Drawing.Pen,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Draws a circle specified by a coordinate pair of the center and radius.
+            </summary>
+            <param name="g">Graphics g</param>
+            <param name="p">Pen that determines the color, width, and style of the line.</param>
+            <param name="x">The x-coordinate of center of the circle.</param>
+            <param name="y">The y-coordinate of center of the circle.</param>
+            <param name="r">The radius of the circle.</param>
+        </member>
+        <member name="M:usefulFunctions.f.fillC(System.Windows.Forms.PaintEventArgs,System.Drawing.Brush,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Fills the interior of a circle specified by a coordinate pair of the center and radius.
+            </summary>
+            <param name="e">PaintEventArgs e</param>
+            <param name="p">Brush that determines the characteristics of the fill.</param>
+            <param name="x">The x-coordinate of center of the circle.</param>
+            <param name="y">The y-coordinate of center of the circle.</param>
+            <param name="r">The radius of the circle.</param>
+        </member>
+        <member name="M:usefulFunctions.f.fillC(System.Windows.Forms.PaintEventArgs,System.Drawing.Brush,System.Double,System.Double,System.Double)">
+            <summary>
+            Fills the interior of a circle specified by a coordinate pair of the center and radius.
+            </summary>
+            <param name="e">PaintEventArgs e</param>
+            <param name="p">Brush that determines the characteristics of the fill.</param>
+            <param name="x">The x-coordinate of center of the circle.</param>
+            <param name="y">The y-coordinate of center of the circle.</param>
+            <param name="r">The radius of the circle.</param>
+        </member>
+        <member name="M:usefulFunctions.f.fillC(System.Drawing.Graphics,System.Drawing.Brush,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Fills the interior of a circle specified by a coordinate pair of the center and radius.
+            </summary>
+            <param name="g">Graphics g</param>
+            <param name="p">Brush that determines the characteristics of the fill.</param>
+            <param name="x">The x-coordinate of center of the circle.</param>
+            <param name="y">The y-coordinate of center of the circle.</param>
+            <param name="r">The radius of the circle.</param>
+        </member>
+        <member name="M:usefulFunctions.f.fillC(System.Drawing.Graphics,System.Drawing.Brush,System.Double,System.Double,System.Double)">
+            <summary>
+            Fills the interior of a circle specified by a coordinate pair of the center and radius.
+            </summary>
+            <param name="g">Graphics g</param>
+            <param name="p">Brush that determines the characteristics of the fill.</param>
+            <param name="x">The x-coordinate of center of the circle.</param>
+            <param name="y">The y-coordinate of center of the circle.</param>
+            <param name="r">The radius of the circle.</param>
+        </member>
+        <member name="M:usefulFunctions.f.dS(System.Windows.Forms.PaintEventArgs,System.Drawing.Pen,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Draws a square specified by a coordinate pair of the center and edge / 2. 
+            </summary>
+            <param name="e">PaintEventArgs e</param>
+            <param name="p">Pen that determines the color, width, and style of the line.</param>
+            <param name="x">The x-coordinate of center of the Square.</param>
+            <param name="y">The y-coordinate of center of the Square.</param>
+            <param name="r">Square's edge / 2</param>
+        </member>
+        <member name="M:usefulFunctions.f.dS(System.Windows.Forms.PaintEventArgs,System.Drawing.Pen,System.Double,System.Double,System.Double)">
+            <summary>
+            Draws a square specified by a coordinate pair of the center and edge / 2.
+            </summary>
+            <param name="e">PaintEventArgs e</param>
+            <param name="p">Pen that determines the color, width, and style of the line.</param>
+            <param name="x">The x-coordinate of center of the Square.</param>
+            <param name="y">The y-coordinate of center of the Square.</param>
+            <param name="r">Square's edge / 2</param>
+        </member>
+        <member name="M:usefulFunctions.f.dS(System.Drawing.Graphics,System.Drawing.Pen,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Draws a square specified by a coordinate pair of the center and edge / 2.
+            </summary>
+            <param name="g">Graphics g</param>
+            <param name="p">Pen that determines the color, width, and style of the line.</param>
+            <param name="x">The x-coordinate of center of the Square.</param>
+            <param name="y">The y-coordinate of center of the Square.</param>
+            <param name="r">Square's edge / 2</param>
+        </member>
+        <member name="M:usefulFunctions.f.dS(System.Drawing.Graphics,System.Drawing.Pen,System.Double,System.Double,System.Double)">
+            <summary>
+            Draws a square specified by a coordinate pair of the center and edge / 2.
+            </summary>
+            <param name="g">Graphics g</param>
+            <param name="p">Pen that determines the color, width, and style of the line.</param>
+            <param name="x">The x-coordinate of center of the Square.</param>
+            <param name="y">The y-coordinate of center of the Square.</param>
+            <param name="r">Square's edge / 2</param>
+        </member>
+        <member name="M:usefulFunctions.f.dSt(System.Windows.Forms.PaintEventArgs,System.Drawing.Font,System.String,System.Double,System.Double)">
+            <summary>
+            Draws the specified text string at the specified location with the specified Brush and Font objects.
+            </summary>
+            <param name="e">PaintEventArgs e</param>
+            <param name="f1">Initializes a new Font that uses the specified existing Font and FontStyle.</param>
+            <param name="s">Represents text as a series of Unicode characters.</param>
+            <param name="x">The x-coordinate of the upper-left corner of the drawn text.</param>
+            <param name="y">The y-coordinate of the upper-left corner of the drawn text.</param>
+        </member>
+        <member name="M:usefulFunctions.f.dSt(System.Drawing.Graphics,System.Drawing.Font,System.String,System.Double,System.Double)">
+            <summary>
+            Draws the specified text string at the specified location with the specified Brush and Font objects.
+            </summary>
+            <param name="g">Graphics g</param>
+            <param name="f1">Initializes a new Font that uses the specified existing Font and FontStyle.</param>
+            <param name="s">Represents text as a series of Unicode characters.</param>
+            <param name="x">The x-coordinate of the upper-left corner of the drawn text.</param>
+            <param name="y">The y-coordinate of the upper-left corner of the drawn text.</param>
+        </member>
+        <member name="M:usefulFunctions.f.dLV(System.Windows.Forms.PaintEventArgs,System.Drawing.Pen,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Draws a line connecting the two points specified by the coordinate pairs.
+            </summary>
+            <param name="e">PaintEventArgs e</param>
+            <param name="p">Pen that determines the color, width, and style of the line.</param>
+            <param name="x1">The x-coordinate of the first point.</param>
+            <param name="y1">The y-coordinate of the first point.</param>
+            <param name="vx">The x-coordinate of the second point.</param>
+            <param name="vy">The y-coordinate of the second point.</param>
+            <param name="vs">The coefficient for vx and vy.</param>
+        </member>
+        <member name="M:usefulFunctions.f.dLV(System.Drawing.Graphics,System.Drawing.Pen,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Draws a line connecting the two points specified by the coordinate pairs.
+            </summary>
+            <param name="g">Graphics g</param>
+            <param name="p">Pen that determines the color, width, and style of the line.</param>
+            <param name="x1">The x-coordinate of the first point.</param>
+            <param name="y1">The y-coordinate of the first point.</param>
+            <param name="vx">The x-coordinate of the second point.</param>
+            <param name="vy">The y-coordinate of the second point.</param>
+            <param name="vs">The coefficient for vx and vy.</param>
+        </member>
+        <member name="M:usefulFunctions.f.dLVG(System.Windows.Forms.PaintEventArgs,System.Drawing.Pen,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Draws a line connecting the two points specified by the coordinate pairs.
+            </summary>
+            <param name="e">PaintEventArgs e</param>
+            <param name="p">Pen that determines the color, width, and style of the line.</param>
+            <param name="x1">The x-coordinate of the first point.</param>
+            <param name="y1">The y-coordinate of the first point.</param>
+            <param name="x2">The x-coordinate of the second point.</param>
+            <param name="y2">The y-coordinate of the second point.</param>
+            <param name="vs">The coefficient for x1, y1, x2 and y2.</param>
+        </member>
+        <member name="M:usefulFunctions.f.dLVG(System.Drawing.Graphics,System.Drawing.Pen,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Draws a line connecting the two points specified by the coordinate pairs.
+            </summary>
+            <param name="g">Graphics g</param>
+            <param name="p">Pen that determines the color, width, and style of the line.</param>
+            <param name="x1">The x-coordinate of the first point.</param>
+            <param name="y1">The y-coordinate of the first point.</param>
+            <param name="x2">The x-coordinate of the second point.</param>
+            <param name="y2">The y-coordinate of the second point.</param>
+            <param name="vs">The coefficient for x1, y1, x2 and y2.</param>
+        </member>
+        <member name="M:usefulFunctions.f.sin(System.Double)">
+            <summary>
+            Returns the sine of the specified angle.
+            </summary>
+            <param name="a">An angle, measured in radians.</param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.cos(System.Double)">
+            <summary>
+            Returns the cosine of the specified angle.
+            </summary>
+            <param name="d">An angle, measured in radians.</param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.tan(System.Double)">
+            <summary>
+            Returns the tangent of the specified angle.
+            </summary>
+            <param name="a">An angle, measured in radians.</param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.atan(System.Double)">
+            <summary>
+            Returns the angle whose tangent is the specified number.
+            </summary>
+            <param name="d">A number representing a tangent.</param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.atan2(System.Double,System.Double)">
+            <summary>
+            Returns the angle whose tangent is the quotient of two specified numbers.
+            </summary>
+            <param name="y">The y coordinate of a point.</param>
+            <param name="x">The x coordinate of a point.</param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.abs(System.Decimal)">
+            <summary>
+            Returns the absolute value of a specified number.
+            </summary>
+            <param name="value">A number in the range MinValue≤ value ≤MaxValue.</param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.abs(System.Double)">
+            <summary>
+            Returns the absolute value of a specified number.
+            </summary>
+            <param name="value">A number in the range MinValue≤value≤MaxValue.</param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.abs(System.Int16)">
+            <summary>
+            Returns the absolute value of a specified number.
+            </summary>
+            <param name="value">A number in the range MinValue≤value≤MaxValue.</param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.abs(System.SByte)">
+            <summary>
+            Returns the absolute value of a specified number.
+            </summary>
+            <param name="value">A number in the range MinValue≤value≤MaxValue.</param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.abs(System.Int64)">
+            <summary>
+            Returns the absolute value of a specified number.
+            </summary>
+            <param name="value">A number in the range MinValue≤value≤MaxValue.</param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.abs(System.Int32)">
+            <summary>
+            Returns the absolute value of a specified number.
+            </summary>
+            <param name="value">A number in the range MinValue≤value≤MaxValue.</param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.abs(System.Single)">
+            <summary>
+            Returns the absolute value of a specified number.
+            </summary>
+            <param name="value">A number in the range MinValue≤value≤MaxValue.</param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.pow(System.Double,System.Double)">
+            <summary>
+            Returns a specified number raised to the specified power.
+            </summary>
+            <param name="x">A double-precision floating-point number to be raised to a power.</param>
+            <param name="y">A double-precision floating-point number that specifies a power.</param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.c(System.Double)">
+            <summary>
+            Convert.ToSingle(d), Converts a specified value to a single-precision floating point number.
+            </summary>
+            <param name="d">A double-precision floating point number.</param>
+            <returns>Convert.ToSingle(d)</returns>
+        </member>
+        <member name="M:usefulFunctions.f.c(System.Int32)">
+            <summary>
+            Convert.ToSingle(d), Converts a specified value to a single-precision floating point number.
+            </summary>
+            <param name="d">A 32-bit signed integer.</param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.c(System.String)">
+            <summary>
+            Convert.ToSingle(d), Converts a specified value to a single-precision floating point number.
+            </summary>
+            <param name="d">A System.String containing a number to convert.</param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.si(System.Double)">
+            <summary>
+            Convert.ToSingle(d), Converts a specified value to a single-precision floating point number.
+            </summary>
+            <param name="d">A double-precision floating point number.</param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.si(System.Int32)">
+            <summary>
+            Convert.ToSingle(d), Converts a specified value to a single-precision floating point number.
+            </summary>
+            <param name="d">A 32-bit signed integer.</param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.si(System.String)">
+            <summary>
+            Convert.ToSingle(d), Converts a specified value to a single-precision floating point number.
+            </summary>
+            <param name="d">A System.String containing a number to convert.</param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.ig(System.Single)">
+            <summary>
+            Converts a specified value to a 32-bit signed integer.
+            </summary>
+            <param name="d">A single-precision floating point number.</param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.ig(System.Double)">
+            <summary>
+            Converts a specified value to a 32-bit signed integer.
+            </summary>
+            <param name="d"></param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.ig(System.String)">
+            <summary>
+            Converts a specified value to a 32-bit signed integer.
+            </summary>
+            <param name="d"></param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.db(System.Single)">
+            <summary>
+            Converts a specified value to a double-precision floating point number.
+            </summary>
+            <param name="d"></param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.db(System.Int32)">
+            <summary>
+            Converts a specified value to a double-precision floating point number.
+            </summary>
+            <param name="d"></param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.db(System.String)">
+            <summary>
+            Converts a specified value to a double-precision floating point number.
+            </summary>
+            <param name="d"></param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.st(System.Double)">
+            <summary>
+            Converts the specified value to its equivalent String representation.
+            </summary>
+            <param name="value">A double-precision floating point number.</param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.st(System.Decimal)">
+            <summary>
+            Converts the specified value to its equivalent String representation.
+            </summary>
+            <param name="value">A Decimal number.</param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.st(System.Single)">
+            <summary>
+            Converts the specified value to its equivalent String representation.
+            </summary>
+            <param name="value">A single-precision floating point number.</param>
+            <returns></returns>
+        </member>
+        <member name="M:usefulFunctions.f.st(System.Int32)">
+            <summary>
+            Converts the specified value to its equivalent String representation.
+            </summary>
+            <param name="value">A 32-bit signed integer.</param>
+            <returns></returns>
+        </member>
+        <member name="P:usefulFunctions.f.pRR">
+            <summary>
+            Pen pR = new Pen(Color.Red, 1), Initializes a new instance of the Pen class with Red Color and 1 Width properties.
+            </summary>
+            <returns>new Pen(Color.Red, 1)</returns>
+        </member>
+    </members>
+</doc>

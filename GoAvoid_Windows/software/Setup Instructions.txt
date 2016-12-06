@@ -1,0 +1,14 @@
+
+Installing the software
+
+-Install Pre-Requirements from the GoAvoid Software/Pre-Requirements (if needed)
+
+-Install the software from the GoAvoid Software/Debug/setup.exe or GoAvoid Software/Release/setup.exe
+
+Modifying the software codes
+
+-GoAvoid Software.sln file can be opened with Microsoft Visual Studio NET 2010 or higher version to modify the software codes and software setup wizard screen.
+
+Note: GoAvoid.sln file can also be opened from GoAvoid v1.0 folder but this project file includes only software codes.
+
+
