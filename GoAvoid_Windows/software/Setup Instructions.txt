@@ -4,8 +4,8 @@ Installing the software
 -Install Pre-Requirements (if needed)
 
 Microsoft Visual Studio .NET 2010 or higher (https://www.visualstudio.com/tr/downloads/)
-Microsoft .NET Framework 4.0
-Microsoft Windows Installer 4.5 or higher (https://github.com/ominnetoglu/GoAvoid/releases/download/v1.0/Pre-Requirements.if.needed.rar)
+Microsoft .NET Framework 4 (https://www.microsoft.com/en-us/download/details.aspx?id=17851) or
+(https://github.com/ominnetoglu/GoAvoid/releases/download/v1.0/Pre-Requirement_file_if_needed.rar)
 Adobe Acrobat Reader( https://get.adobe.com/tr/reader/)
 
 -Install the software from the GoAvoid Software/Debug/setup.exe or GoAvoid Software/Release/setup.exe.
