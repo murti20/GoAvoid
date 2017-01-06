@@ -1,4 +1,4 @@
-# GoAvoid: A Computer Program for Mobile Path Planning
+# GoAvoid: A Computer Program for Mobile Robot Path Planning
     
 GoAvoid® software is a path planner application for mobile robots that take advantage of GDI+ graphical user interface, which is a 
 class-based API for C/C++ programmers in Microsoft Windows®. It is developed as an open-source framework for researchers who work 
